@@ -695,7 +695,7 @@ defaults write com.twitter.twitter-mac HideInBackground -bool true
 ###############################################################################
 # Moom.app                                                                    #
 ###############################################################################
-cp ~/Dropbox/com.manytricks.Moom.plist ~/Library/Preferences/com.manytricks.Moom.plist
+cp ~/Dropbox/settings/com.manytricks.Moom.plist ~/Library/Preferences/com.manytricks.Moom.plist
 
 ###############################################################################
 # Kill affected applications                                                  #
