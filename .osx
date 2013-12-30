@@ -330,8 +330,9 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
 
-# Place the dock on the right side of the screen
-defaults write com.apple.dock pinning -string end
+# Place the dock in the middle of the screen
+# Possible options are 'start', 'end', 'middle'
+defaults write com.apple.dock pinning -string middle
 
 # Enable highlight hover effect for the grid view of a stack (Dock)
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
