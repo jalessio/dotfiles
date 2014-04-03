@@ -26,6 +26,7 @@ alias be="bundle exec"
 
 # Emulate "normal" Unixy behavior is OS X
 alias locate="mdfind -name"
+alias sha256sum="shasum -a 256"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
