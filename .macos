@@ -96,6 +96,9 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo Hos
 # Disable Notification Center and remove the menu bar icon
 # launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
 
+# Show date and time in the menu bar
+defaults write com.apple.menuextra.clock "DateFormat" "EEE MMM d  H.mm"
+
 # Disable automatic capitalization as it’s annoying when typing code
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 
@@ -120,6 +123,11 @@ defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
+
+# Set mouse and scrolling speed
+# https://github.com/mathiasbynens/dotfiles/pull/737
+defaults write NSGlobalDomain com.apple.mouse.scaling -int 3
+defaults write NSGlobalDomain com.apple.scrollwheel.scaling -float 0.6875
 
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
