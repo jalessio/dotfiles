@@ -97,7 +97,7 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo Hos
 # launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
 
 # Show date and time in the menu bar
-defaults write com.apple.menuextra.clock "DateFormat" "EEE MMM d  H.mm"
+defaults write com.apple.menuextra.clock "DateFormat" "EEE MMM d h.mm"
 
 # Disable automatic capitalization as it’s annoying when typing code
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
