@@ -94,11 +94,20 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 source ~/.aliases
+
+# Source file which contains things which cannot be included in the
+# 'dotfiles' repo (like secrets).
+source ~/.extra
+
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias code=code-insiders
+
+# ctrl+left and ctrl+right key bindings
+bindkey "[C" emacs-forward-word   #control left
+bindkey "[D" backward-word        #control right
 
 
 # rbenv
