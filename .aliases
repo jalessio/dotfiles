@@ -19,6 +19,7 @@ alias t="time"
 alias d="docker"
 alias dc="docker-compose"
 alias wp="waypoint"
+alias tf="terraform"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
